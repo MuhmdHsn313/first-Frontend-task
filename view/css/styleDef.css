@@ -2,7 +2,7 @@
         /* Cairo */
         @import url('https://fonts.googleapis.com/css?family=Cairo');
         /* El Messiri */
-        @import url('https://fonts.googleapis.com/css?family=Cairo|El+Messiri');
+        @import url('https://fonts.googleapis.com/css?family=El+Messiri');
         /* Changa */
         @import url('https://fonts.googleapis.com/css?family=Changa');
         /* Amiri */
@@ -12,19 +12,6 @@
 /*  -=-=-=-=-=-=---> Style All Page Default <---=-=-=-=-=-=-  */
 
     a.rem{text-decoration: none;}
-    img.logoSite{
-        margin: 5px;
-        height: 150px;
-        width: 150px;
-        transition: all 0.5s;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-    }
-    img.logoSite:hover{
-    filter: blur(5px);
-    /*border: 4px rgba(15, 15, 15, 0.514);*/
-
-    }
 
 
 
@@ -37,7 +24,7 @@ body{
     /*height: 2500px;*/
 
 }
-    /*********** HEADER ***********/
+  /*********** HEADER ***********/
     header{
         background-image: linear-gradient(rgba(5, 5, 5, 0.767),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.767)),url(../img/wallpaper/waters.jpg);
         background-size: 100%;
@@ -46,8 +33,66 @@ body{
         background-position: center center;
 
     }
+        img.logoSite{
+            height: 150px;
+            width: 150px;
+            transition: all 0.5s;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        img.logoSite:hover{
+            filter: blur(5px);
+
+        }    
+
+        div.titleSite{
+            padding: 15px;
+
+        }
+        div.titleSite div{
+            display: inline-block;
+            
+        }
+        div.title div#td{ 
+            
+        }
+        div.titleSite div#td span{
+            display: block;
+        }
+
+            div.titleSite div#td span.siteName{
+                font-family: 'Changa';
+                font-size: 45pt;
+                color: bisque;
+                position: relative;
+                top: -12px;
+                right: 30px;
+
+            }
+            div.titleSite div#td span.describSite{
+                font-family: 'El Messiri';
+                font-size: 20pt;
+                color: rgb(197, 197, 197);
+                position: relative;
+                top: -18px;
+            }
+            div#git{
+                float: left;
+                padding: 15px;
+                padding-top: 40px;
+            }
+            div#git img{
+                height: 50px;
+                width: 50px;
+                padding: 5px
+            }
+            div#git img:hover{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50%;
+            }
+
         nav{
-            padding: 15px 10px;
+            padding: 5px 50px;
             cursor: pointer;
         }
             span.LSiteButton{
@@ -90,4 +135,14 @@ body{
                 height: 300px;
                 background-color: rgba(15, 15, 15, 0.856);
 
+            }
+
+
+            div#hack1{
+                height: 200px;
+                width: 60%;
+                background-color: rgba(238, 50, 50, 0.932);
+                border-radius: 4px;
+                align-items: center;
+                transition: all 0.5s;
             }
