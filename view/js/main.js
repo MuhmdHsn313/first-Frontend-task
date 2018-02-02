@@ -14,3 +14,4 @@ var s1111 = document.getElementById("1111"),
     }else{
         onIt.innerHTML=" ";
     }
+
