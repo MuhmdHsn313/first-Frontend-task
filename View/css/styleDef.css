@@ -29,11 +29,10 @@ body{
 }
   /*********** HEADER ***********/
     header{
-        background-image: /*linear-gradient(rgba(5, 5, 5, 0.767),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.767)),*/url(../img/wallpaper/waters.jpg);
+        background-image:linear-gradient(rgba(5, 5, 5, 0.767),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.767)), url(../img/wallpaper/waters.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
-        z-index: -1;
         height: 850px;
 
     }
@@ -97,6 +96,7 @@ body{
                 float: left;
                 padding: 15px;
                 padding-top: 40px;
+                z-index: 3;
             }
             div.logoLink{
                 display: inline-block;
@@ -113,25 +113,51 @@ body{
                 box-sizing: border-box;
                 margin: 5px;
                 box-shadow: 0 0 4px 5px #222 outset;
+                transition-duration: 0.15s;
+
             }
     
-            div#facebook{ z-index: 2;
-                background-image: url(View/img/logo/black/Facebook.svg);
+            div#facebook{
+                background-image: url(../img/logo/black/Facebook.svg);
             }
             div#facebook:hover{
-                background-image: url(View/img/logo/color/Facebook.svg);
+                background-image: url(../img/logo/color/Facebook.svg);
             }
             div#twitter{
-                background-image: url(View/img/logo/black/Twitter.svg);
+                background-image: url(../img/logo/black/Twitter.svg);
             }
             div#twitter:hover{
-                background-image: url(View/img/logo/color/Twitter.svg);
+                background-image: url(../img/logo/color/Twitter.svg);
             }
             div#github{
-                background-image: url(View/img/logo/black/Github.svg);
+                background-image: url(../img/logo/black/Github.svg);
             }
             div#github:hover{
-                background-image: url(View/img/logo/color/Github.svg);
+                background-image: url(../img/logo/color/Github.svg);
+            }
+            div#googleplus{
+                background-image: url(../img/logo/black/Google+.svg);
+            }
+            div#googleplus:hover{
+                background-image: url(../img/logo/color/Google+.svg);
+            }
+            div#youtube{
+                background-image: url(../img/logo/black/YouTube.svg);
+            }
+            div#youtube:hover{
+                background-image: url(../img/logo/color/YouTube.svg);
+            }
+            div#pinterest{
+                background-image: url(../img/logo/black/Pinterest.svg);
+            }
+            div#pinterest:hover{
+                background-image: url(../img/logo/color/Pinterest.svg);
+            }
+            div#linkedin{
+                background-image: url(../img/logo/black/Linkedin.svg);
+            }
+            div#linkedin:hover{
+                background-image: url(../img/logo/color/Linkedin.svg);
             }
 
         nav{
