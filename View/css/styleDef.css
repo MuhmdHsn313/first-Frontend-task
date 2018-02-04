@@ -29,18 +29,19 @@ body{
 }
   /*********** HEADER ***********/
     header{
-        background-image: linear-gradient(rgba(5, 5, 5, 0.767),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.767)),url(../img/wallpaper/waters.jpg);
+        background-image: /*linear-gradient(rgba(5, 5, 5, 0.767),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.767)),*/url(../img/wallpaper/waters.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 850px;
         background-position: center center;
+        z-index: -1;
+        height: 850px;
 
     }
         img.logoSite{
             height: 150px;
             width: 150px;
             border-radius:50%; 
-            box-shadow: 0px 0px 4px 8px rgba(4, 0, 24, 0.877) inset;
+            box-shadow: 0px 0px 10px 8px rgba(4, 0, 24, 0.877) inset;
             transition-duration: 0.3s;
         
         }
@@ -54,7 +55,7 @@ body{
 
         } 
         /*
-        * For next time *
+        * For next time * To show a slide when crusor on the logo
         div#imgtitle{
             transition: all 0.3s;
         }div#imgtitle:hover{ 
@@ -69,7 +70,7 @@ body{
             
         }
         div.title div#td{ 
-            
+            /* s s*/
         }
         div.titleSite div#td span{
             display: block;
@@ -91,22 +92,46 @@ body{
                 position: relative;
                 top: -18px;
             }
-            div#git{
+            /* The Icon on the up left aside front page*/
+            div#ourTch{
                 float: left;
                 padding: 15px;
                 padding-top: 40px;
             }
-            div#git img{
+            div.logoLink{
+                display: inline-block;
                 height: 50px;
                 width: 50px;
-                padding: 5px;
-                transition: all 0.3s;
-
+                margin: 10px;
+                filter:drop-shadow(50%);
+                transition-duration: 0.15s;
+                z-index: 2;
             }
-            div#git img:hover{
-                background-color: rgb(224, 224, 224);
-                border-radius: 50%;
-                
+            div.logoLink:hover{
+                height: 60px;
+                width: 60px;
+                box-sizing: border-box;
+                margin: 5px;
+                box-shadow: 0 0 4px 5px #222 outset;
+            }
+    
+            div#facebook{ z-index: 2;
+                background-image: url(View/img/logo/black/Facebook.svg);
+            }
+            div#facebook:hover{
+                background-image: url(View/img/logo/color/Facebook.svg);
+            }
+            div#twitter{
+                background-image: url(View/img/logo/black/Twitter.svg);
+            }
+            div#twitter:hover{
+                background-image: url(View/img/logo/color/Twitter.svg);
+            }
+            div#github{
+                background-image: url(View/img/logo/black/Github.svg);
+            }
+            div#github:hover{
+                background-image: url(View/img/logo/color/Github.svg);
             }
 
         nav{
