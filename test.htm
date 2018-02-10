@@ -2,111 +2,74 @@
 <html>
     <head>
         <title>Test Page</title>
+        <meta charset="UTF-8">
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Changa');
+            * {
+        font-family: 'Changa';
 
+         }
             body{
                 background-image: url(View/img/wallpaper/nature.jpg);
                 background-repeat: no-repeat;
                 background-size: 100%;
+                direction: rtl;
             }
-
-            a{
-                text-decoration: none;
-            }
-            div.logoLink{
-                display: inline-block;
-                height: 50px;
-                width: 50px;
-                margin: 10px;
-                filter:drop-shadow(50%);
-                transition-duration: 0.15s;
-                z-index: 2;
-            }
-            div.logoLink:hover{
-                height: 60px;
-                width: 60px;
-                box-sizing: border-box;
-                margin: 5px;
-                box-shadow: 0 0 4px 5px #222 outset;
-                transition-duration: 0.15s;
+            section#signPeople{
+            background-color: rgba(0, 0, 0, 0.603);
+            width: 85%;
+            height: 450px;
+            margin: 90px;
 
             }
+            section#signPeople div.sign{
+                display: inline-grid;
+                width: 45%;
+                padding: 20px;
+                border-left: 2px none black;
 
-            div#facebook{
-                background-image: url(View/img/logo/black/Facebook.svg);
             }
-            div#facebook:hover{
-                background-image: url(View/img/logo/color/Facebook.svg);
+            section#signPeople div div.title{
+                color: azure;
+                background-color: maroon;
+                width: 30%;
+                padding: 10px;
             }
-            div#twitter{
-                background-image: url(View/img/logo/black/Twitter.svg);
+            div.sign form label {
+                text-align: start;
+                padding: 5px;
+                padding-right: 10px;
             }
-            div#twitter:hover{
-                background-image: url(View/img/logo/color/Twitter.svg);
-            }
-            div#github{
-                background-image: url(View/img/logo/black/Github.svg);
-            }
-            div#github:hover{
-                background-image: url(View/img/logo/color/Github.svg);
-            }
-            div#googleplus{
-                background-image: url(View/img/logo/black/Google+.svg);
-            }
-            div#googleplus:hover{
-                background-image: url(View/img/logo/color/Google+.svg);
-            }
-            div#youtube{
-                background-image: url(View/img/logo/black/YouTube.svg);
-            }
-            div#youtube:hover{
-                background-image: url(View/img/logo/color/YouTube.svg);
-            }
-            div#pinterest{
-                background-image: url(View/img/logo/black/Pinterest.svg);
-            }
-            div#pinterest:hover{
-                background-image: url(View/img/logo/color/Pinterest.svg);
-            }
-            div#linkedin{
-                background-image: url(View/img/logo/black/Linkedin.svg);
-            }
-            div#linkedin:hover{
-                background-image: url(View/img/logo/color/Linkedin.svg);
-            }
-        
+            
         </style>
-        
     </head>
-
-
     <body>
-
-        <header>
-
-                    <a href="#FaceBook" target="_blank">
-                        <div id="facebook" class="logoLink"></div>
-                    </a>
-                    <a href="#Twitter" target="_blank">
-                        <div id="twitter"  class="logoLink"></div>
-                    </a>
-                    <a href="#GitHub" target="_blank">
-                        <div id="github"   class="logoLink"></div>
-                    </a>
-                    <a href="#GooglePlus" target="_blank">
-                        <div id="googleplus"   class="logoLink"></div>
-                    </a>
-                    <a href="#Youtube" target="_blank">
-                        <div id="youtube"   class="logoLink"></div>
-                    </a>
-                    <a href="#Pinterest" target="_blank">
-                        <div id="pinterest"   class="logoLink"></div>
-                    </a>
-                    <a href="#Linkedin" target="_blank">
-                        <div id="linkedin"   class="logoLink"></div>
-                    </a>
-
-        </header>
-
+            <section id="signPeople">
+                    <div id="login" class="sign">
+                        <div class="title">دخول الاعضاء</div>
+                        <form method="get" action="" name="login">
+                            <label>اسم المستخدم</label>
+                            <input type="username">
+                            <br>
+                            <label>كلمة المرور </label>
+                            <input type="password">
+                            <br>
+                            <input type="checkbox">
+                            <label>تذكرني</label>
+                            <br>
+                            <input type="submit" value="دخول">
+        
+        
+                        </form>
+                    </div>
+                    <div id="joinUs" class="sign">
+                        <div class="title">انظم إلينا</div>
+                        <form method="get" action="" name="joinUs">
+        
+        
+        
+                        </form>
+                    </div>
+                </section>
     </body>
 </html>

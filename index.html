@@ -5,7 +5,7 @@
 <title>Hello World</title>
 <link rel="icon" href="View/img/icon/c4n.ico">
 <link rel="stylesheet" type="text/css" href="View/css/styleDef.css">
-
+<meta name="viewport" content="width=device-width, initial-scala=1.0">
 </head>
 <body>
     <header>
@@ -48,7 +48,7 @@
             </div>
         </a>
 
-        <nav>
+        <nav id="branchSite">
             <a href="index.html" class="rem"><span class="LSiteButton">الرئيسية</span></a>
             <span class="|">|</span>
             <a href="Projects/jsproj.html" class="rem"><span class="LSiteButton">مشاريع جافا سكريبت</span></a>
@@ -59,32 +59,135 @@
             <span class="|">|</span>
             <a href="aboutus.html" class="rem"><span class="LSiteButton">عنّا</span></a>
         </nav>
-        <section id="siteBranch">
-            <h2>اقسام الموقع</h2>
-            <input type="radio" name="siteBranch" class="siteBranchR" value="الرئيسية" >
-            <input type="radio" name="siteBranch" class="siteBranchR" value="الواجهة الامامية">
-            <input type="radio" name="siteBranch" class="siteBranchR" value="الواجهة الخفية"> 
-            <input type="radio" name="siteBranch" class="siteBranchR" value="ابداعات الاعضاء">
-            <input type="radio" name="siteBranch" class="siteBranchR" value="عنا">
-            <input type="radio" name="siteBranch" class="siteBranchR" value="اقتراحات">
+        <section id="signPeople">
+            <div id="login" class="sign">
+                <div class="title">دخول الاعضاء</div>
+                <center>
+                <form method="get" action="" name="login">
+                    <input type="username" placeholder="إسم المستخدم" class="input">
+                    <input type="password" placeholder="كلمة المرور" class="input">
+                    <input type="checkbox">
+                    <label style="color:azure;">تذكرني</label>
+                    <input type="submit" value="دخول">
+                    <div>
+                        <a href="#forgetPassword" class="rem" style="color:azure; padding-top:20px;">
+                        هل نسيت كلمة السر؟
+                        </a>
+                    </div>
+                </form>
+                
+            </center>
+            </div>
+            <div id="joinUs" class="sign">
+                <div class="title">انظم إلينا</div>
+                <form method="get" action="" name="joinUs">
+    
+    
+    
+                </form>
+            </div>
         </section>
     </header>
 
-    <section>
+    <section id="siteBranch">
 
-            <span id="1111" style="background-color:aqua;font-size:20pt;cursor:pointer;">1111</span>
-            <span id="2222" style="background-color:aquamarine;font-size:20pt;cursor:pointer;">2222</span>
-        </div>
-        <div id="onit">
+            <div class="sitebox">الإبداعية</div>
+            <div class="sitebox">المجانية</div>
+            <div class="sitebox">المشاركة</div>
+            <div class="sitebox">انظم الينا</div>
+        </section>
+        <section>
+            <div id="showPort">
 
-        </div>
-
-    </section>
+                <div class="describThing">
+                    <img src="View/img/logo/webDecrib/idea.svg">
+                    <span class="title"> عنوان بسيط </span>
+                    <span class="describ">
+                        هنا نص بسيط يكتب لشرح جزء معين او خصيصة معينة،
+                        الغرض هنا الشرح، الغرض هنا الشرح، الغرض هنا الشرح. 
+                        هنا نص بسيط يكتب لشرح جزء معين او خصيصة معينة،
+                        الغرض هنا الشرح، الغرض هنا الشرح، الغرض هنا الشرح.
+                    </span>
+                </div>
+                <div class="describThing">
+                    <img src="View/img/logo/webDecrib/idea.svg">
+                    <span class="title"> عنوان بسيط </span>
+                    <span class="describ">
+                        هنا نص بسيط يكتب لشرح جزء معين او خصيصة معينة،
+                        الغرض هنا الشرح، الغرض هنا الشرح، الغرض هنا الشرح. 
+                        هنا نص بسيط يكتب لشرح جزء معين او خصيصة معينة،
+                        الغرض هنا الشرح، الغرض هنا الشرح، الغرض هنا الشرح.
+                    </span>
+                </div>
+                <div class="describThing">
+                    <img src="View/img/logo/webDecrib/idea.svg">
+                    <span class="title"> عنوان بسيط </span>
+                    <span class="describ">
+                        هنا نص بسيط يكتب لشرح جزء معين او خصيصة معينة،
+                        الغرض هنا الشرح، الغرض هنا الشرح، الغرض هنا الشرح. 
+                        هنا نص بسيط يكتب لشرح جزء معين او خصيصة معينة،
+                        الغرض هنا الشرح، الغرض هنا الشرح، الغرض هنا الشرح.
+                    </span>
+                </div>
+                
+            </div>
+        </section>
 
 
 
     <footer>
-
+ 
+        <div class="listItem">
+            <span class="itemTitle">الاولى</span>
+            <div class="itemBar">
+                <a href="#1" class="rem"><span class="item">واحد</span></a>
+                <a href="#1" class="rem"><span class="item">اثنان</span></a>
+                <a href="#1" class="rem"><span class="item">ثلاث</span></a>
+                <a href="#4" class="rem"><span class="item">اربع</span></a>
+                <a href="#5" class="rem"><span class="item">خمس</span></a>
+            </div>
+        </div>
+        <div class="listItem">
+            <span class="itemTitle">عنوان</span>
+            <div class="itemBar">
+                <a href="#1" class="rem"><span class="item">رابط</span></a>
+                <a href="#2" class="rem"><span class="item">رابط</span></a>
+                <a href="#3" class="rem"><span class="item">رابط</span></a>
+                <a href="#4" class="rem"><span class="item">رابط</span></a>
+                <a href="#5" class="rem"><span class="item">رابط</span></a>
+            </div>
+        </div>
+        <div class="listItem">
+            <span class="itemTitle">عنوان</span>
+            <div class="itemBar">
+                <a href="#1" class="rem"><span class="item">رابط</span></a>
+                <a href="#2" class="rem"><span class="item">رابط</span></a>
+                <a href="#3" class="rem"><span class="item">رابط</span></a>
+                <a href="#4" class="rem"><span class="item">رابط</span></a>
+                <a href="#5" class="rem"><span class="item">رابط</span></a>
+            </div>
+        </div>
+        <div class="listItem">
+            <span class="itemTitle">عنوان</span>
+            <div class="itemBar">
+                <a href="#1" class="rem"><span class="item">رابط</span></a>
+                <a href="#2" class="rem"><span class="item">رابط</span></a>
+                <a href="#3" class="rem"><span class="item">رابط</span></a>
+                <a href="#4" class="rem"><span class="item">رابط</span></a>
+                <a href="#5" class="rem"><span class="item">رابط</span></a>    
+            </div>
+        </div>
+        <div class="listItem">
+            <span class="itemTitle">عنوان</span>
+            <div class="itemBar">
+                <a href="#1" class="rem"><span class="item">رابط</span></a>
+                <a href="#2" class="rem"><span class="item">رابط</span></a>
+                <a href="#3" class="rem"><span class="item">رابط</span></a>
+                <a href="#4" class="rem"><span class="item">رابط</span></a>
+                <a href="#5" class="rem"><span class="item">رابط</span></a>    
+            </div>
+        </div>    
+        <center style="color:azure">All &copy;CopyRight Save For MUHAMMAD HASAN ALASADY </center>
     </footer>
 
 <script src="View/js/main.js">

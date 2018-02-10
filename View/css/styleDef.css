@@ -29,7 +29,7 @@ body{
 }
   /*********** HEADER ***********/
     header{
-        background-image:linear-gradient(rgba(5, 5, 5, 0.767),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.767)), url(../img/wallpaper/waters.jpg);
+        background-image:linear-gradient(rgba(5, 5, 5, 0.658),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.658)), url(../img/wallpaper/moss.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -68,9 +68,9 @@ body{
             display: inline-block;
             
         }
-        div.title div#td{ 
-            /* s s*/
-        }
+        /*div.title div#td{ 
+            /* s s *\
+        } */
         div.titleSite div#td span{
             display: block;
         }
@@ -160,9 +160,11 @@ body{
                 background-image: url(../img/logo/color/Linkedin.svg);
             }
 
-        nav{
-            padding: 5px 50px;
-            cursor: pointer;
+        nav#branchSite{
+            background-color: rgba(0, 0, 0, 0.733);
+            padding: 10px 50px;
+            text-align: center;
+
         }
             span.LSiteButton{
                 height: 110%;
@@ -171,7 +173,8 @@ body{
                 color: rgb(255, 255, 255);
                 text-shadow: -1px 1px 3px black; 
                 transition: all 0.4s;
-                
+                text-shadow: 2px 2px 6px 5px #222;
+                cursor: pointer;
     
             }
             span.LSiteButton:hover{
@@ -183,6 +186,9 @@ body{
             span.LSiteButton:active{
                 color: rgb(223, 86, 86);
             }
+            span.LSiteButton:visited{
+                color: rgb(80, 80, 80);
+            }
             span[class="|"]{
                 height: 110%;
                 font-family:'Changa';
@@ -191,28 +197,130 @@ body{
                 font: bold;
 
             }
+            section#signPeople{
+                background-color: rgba(0, 0, 0, 0.603);
+                width: 85%;
+                height: 450px;
+                margin: 90px;
+    
+                }
+                section#signPeople div.sign{
+                    display: inline-grid;
+                    width: 45%;
+                    padding: 20px;
+                    border-left: 2px none black;
+    
+                }
+                section#signPeople div div.title{
+                    color: azure;
+                    background-color: maroon;
+                    width: 30%;
+                    padding: 10px;
+                }
+                div.sign form{
+                    margin: 15%;
+                }
+                div.sign form input.input{
+                    display: block;
+                    align-items: center;
+                    margin: 15px;
+                    border: 2px paleturquoise dotted;
+                    text-align: center;
+                    width: 250px;
+                    height: 40px;
+                    background-color: rgba(63, 63, 63, 0.685);
+                    color: azure;
+                    
+                }
+           
 
+
+  /*********** section ***********/
 
             section{
                 height: 1250px;
 
             }
+            section#siteBranch{
+                width: 85%;
+                text-align: center;
+                position: relative;
+                right: 90px;
+                top: 20px;
+                 
+            }
+            div.sitebox{
+                display: inline-block;
+                text-align: center;
+                background-color: aquamarine;
+                margin: 10px;
+                padding: 20px;
+                cursor: pointer;
+                font-size: 20px;
+                width: 90px;
+                margin-bottom: 20px;
+
+            }
+        div#showPort{
+            
+          
+        }
+            div.describThing{
+                margin: 25px;
+                width: 29%;
+                display: inline-block;
+            }
+                div.describThing img{
+                    height: 60px;
+                    width: 60px;
+                    align-items: flex-start;
+                }
+                div.describThing span{
+                    color: rgb(0, 0, 0);
+                    text-align: start;
+
+                }
+                div.describThing span.title{
+                    font-size: 25px;
+                    position: relative;
+                    top:-20px;
+                    right: 20px;
+                    
+                }
+                div.describThing span.describ{
+                    display: block;
+                }
 
 
+  /*********** HEADER ***********/
 
             footer{
 
-                height: 300px;
+                min-height: 300px;
+                max-height: 400px;
                 background-color: rgba(15, 15, 15, 0.856);
 
             }
+                div.listItem{
+                    display: inline-block;
+                    padding: 5px;
+                    margin:12px;
+                    color: azure;
+                    width: 17%;
+                    align-items: center center;
+                }
+                span.itemTitle{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
 
-
-            div#hack1{
-                height: 200px;
-                width: 60%;
-                background-color: rgba(238, 50, 50, 0.932);
-                border-radius: 4px;
-                align-items: center;
-                transition: all 0.5s;
-            }
+                span.item{
+                    display: block;
+                    padding: 5px;
+                    color: azure;
+                    font-size: 15px;
+                }
+                span.item:hover{
+                    border-bottom: rgb(150, 150, 150);
+                    color: rgb(150, 150, 150);
+                }
