@@ -29,18 +29,11 @@
     a.rem{text-decoration: none;}
 
     span.myButton{
-        background-color: #222;
-        text-align: center;
-        padding: 10px;
-        width: 20%;
-        cursor: pointer;
-        font-size: 15pt;
-        transition: all 0.3s;
-        border-radius: 5px;
-        position: relative;
-        right: 35%;
-        margin-top:7%; 
         color: azure;
+        background-color: #222;
+        padding: 10px;
+        position: relative;
+        top: 10px;
     }
     span.myButton:hover{
         background-color: rgb(25, 72, 116);
@@ -52,75 +45,83 @@
     
 body{
     direction: rtl;
-    margin: 0px; padding: 0px;
+    margin: 0px; 
+    padding: 0px;
     background-color: rgb(223, 223, 223);
     /*height: 2500px;*/
 
 }
   /*********** HEADER ***********/
-    header{
-        background-image:linear-gradient(rgba(5, 5, 5, 0.658),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.658)), url(../img/wallpaper/moss.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 850px;
+  header{
+    background-image:linear-gradient(rgba(5, 5, 5, 0.658),rgba(0, 0, 0, 0.13),rgba(5, 5, 5, 0.658)), url(../img/wallpaper/moss.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 850px;
 
+}
+    img.logoSite{
+        height: 150px;
+        width: 150px;
+        border-radius:50%; 
+        box-shadow: 0px 0px 10px 8px rgba(4, 0, 24, 0.877) inset;
+        transition-duration: 0.3s;
+    
     }
-        img.logoSite{
-            height: 150px;
-            width: 150px;
-            border-radius:50%; 
-            box-shadow: 0px 0px 10px 8px rgba(4, 0, 24, 0.877) inset;
-            transition-duration: 0.3s;
+    img.logoSite:hover{
+        filter: blur(3px);
+
+    }    
+
+    div.titleSite{
+        padding: 15px;
+
+    } 
+    /*
+    * For next time * To show a slide when crusor on the logo
+    div#imgtitle{
+        transition: all 0.3s;
+    }div#imgtitle:hover{ 
+        filter: blur(3px); 
+    }
+    */
+    
+
+
+    div.titleSite div{
+        display: inline-block;
         
+    }
+    /*div.title div#td{ 
+        /* s s *\
+    } */
+    div.titleSite div#td span{
+        display: block;
+    }
+
+        div.titleSite div#td span.siteName{
+            font-family: 'Changa';
+            font-size: 45pt;
+            color: bisque;
+            position: relative;
+            top: -12px;
+            right: 30px;
+
         }
-        img.logoSite:hover{
-            filter: blur(3px);
-
-        }    
-
-        div.titleSite{
+        div.titleSite div#td span.describSite{
+            font-family: 'El Messiri';
+            font-size: 20pt;
+            color: rgb(197, 197, 197);
+            position: relative;
+            top: -18px;
+        }
+        /* The Icon on the up left aside front page*/
+        div#ourTch{
+            float: left;
             padding: 15px;
-
-        } 
-        /*
-        * For next time * To show a slide when crusor on the logo
-        div#imgtitle{
-            transition: all 0.3s;
-        }div#imgtitle:hover{ 
-            filter: blur(3px); 
+            padding-top: 40px;
+            z-index: 3;
         }
-        */
-        
-
-
-        div.titleSite div{
-            display: inline-block;
-            
-        }
-        /*div.title div#td{ 
-            /* s s *\
-        } */
-        div.titleSite div#td span{
-            display: block;
-        }
-
-            div.titleSite div#td span.siteName{
-                font-family: 'Changa';
-                font-size: 45pt;
-                color: bisque;
-                position: relative;
-                top: -12px;
-                right: 30px;
-
-            }
-            div.titleSite div#td span.describSite{
-                font-family: 'El Messiri';
-                font-size: 20pt;
-                color: rgb(197, 197, 197);
-                position: relative;
-                top: -18px;
-            }
             /* The Icon on the up left aside front page*/
             div#ourTch{
                 float: left;
@@ -192,8 +193,9 @@ body{
 
         nav#branchSite{
             background-color: rgba(0, 0, 0, 0.733);
-            padding: 10px 50px;
+            padding: 10px;
             text-align: center;
+            width: 100%;
 
         }
             span.LSiteButton{
@@ -281,46 +283,22 @@ body{
   /*********** section ***********/
 
     section{
-
+        height: 600px;
     }
-        section article#slides section.txsl{
-            padding: 10px;
-            background-image:linear-gradient(rgba(5, 5, 5, 0.6),rgba(0, 0, 0, 0.2),rgba(5, 5, 5, 0.6)),url(../img/wallpaper/nature.jpg);
-            background-size: 100%;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 640px;
-            color: azure;
-        }
         
-            article#slides section.txsl span{
-                display: block;
-                position: relative;
-                top: 30%;
-                text-shadow: 1px 2px 2px#222;
-
-            }
-            article#slides section.txsl span.title{
-                position: relative;
-                top: 25%;
-                right: 10%;
-                font-size: 35pt;
-
-            }
-            article#slides section.txsl span.describ{
-
-                font-size: 15pt;
-
-            }
-
-        div#showPort{
-            
+        article#showPort{
+            position: relative;
+            top: 29px;
+            padding: 20px;
+            margin: 0px;
           
         }
             div.describThing{
-                margin: 25px;
                 width: 29%;
-                display: inline-block;
+                display: inline-table;
+                padding: 10px;
+                margin-right: 20px;
+                
             }
                 div.describThing img{
                     height: 60px;
