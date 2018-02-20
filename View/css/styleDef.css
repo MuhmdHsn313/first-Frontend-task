@@ -7,6 +7,18 @@
         @import url('https://fonts.googleapis.com/css?family=Changa');
         /* Amiri */
         @import url('https://fonts.googleapis.com/css?family=Amiri');
+    /* Animation */
+    @keyframes myslide {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+        }
 
 
 /*  -=-=-=-=-=-=---> Style All Page Default <---=-=-=-=-=-=-  */
@@ -15,6 +27,24 @@
 
     }
     a.rem{text-decoration: none;}
+
+    span.myButton{
+        background-color: #222;
+        text-align: center;
+        padding: 10px;
+        width: 20%;
+        cursor: pointer;
+        font-size: 15pt;
+        transition: all 0.3s;
+        border-radius: 5px;
+        position: relative;
+        right: 35%;
+        margin-top:7%; 
+        color: azure;
+    }
+    span.myButton:hover{
+        background-color: rgb(25, 72, 116);
+    }
 
 
 
@@ -172,15 +202,16 @@ body{
                 font-size: 17px;
                 color: rgb(255, 255, 255);
                 text-shadow: -1px 1px 3px black; 
-                transition: all 0.4s;
-                text-shadow: 2px 2px 6px 5px #222;
+                transition: all 0.3s;
                 cursor: pointer;
-    
+                padding: 5px;
+                
             }
             span.LSiteButton:hover{
-                color: rgba(253, 185, 108, 0.986);
-                border-bottom: 2px;
-                border-bottom-color: rgba(253, 185, 108, 0.986) ;
+                color: rgba(243, 211, 70, 0.945);
+                border-bottom: 2px solid rgb(243, 209, 60, 0.945);
+                font-size: 20px;
+                padding: 0px
 
             }
             span.LSiteButton:active{
@@ -216,11 +247,11 @@ body{
                     background-color: maroon;
                     width: 30%;
                     padding: 10px;
-                }
+                } 
                 div.sign form{
-                    margin: 15%;
+                    margin: 10%;
                 }
-                div.sign form input.input{
+                form input.input{
                     display: block;
                     align-items: center;
                     margin: 15px;
@@ -228,39 +259,60 @@ body{
                     text-align: center;
                     width: 250px;
                     height: 40px;
+                    background-color: rgba(63, 63, 63, 0.686);
+                    color: azure;
+                    direction: ltr
+
+                }
+                form[name="rescave"] input.input[name="repass"]{
+                    align-items: center;
+                    border: 2px paleturquoise dotted;
+                    text-align: center;
+                    width: 240px;
+                    height: 30px;
                     background-color: rgba(63, 63, 63, 0.685);
                     color: azure;
-                    
+                    direction: ltr;
+                    display: inline;
                 }
            
 
 
   /*********** section ***********/
 
-            section{
-                height: 1250px;
+    section{
 
-            }
-            section#siteBranch{
-                width: 85%;
-                text-align: center;
+    }
+        section article#slides section.txsl{
+            padding: 10px;
+            background-image:linear-gradient(rgba(5, 5, 5, 0.6),rgba(0, 0, 0, 0.2),rgba(5, 5, 5, 0.6)),url(../img/wallpaper/nature.jpg);
+            background-size: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 640px;
+            color: azure;
+        }
+        
+            article#slides section.txsl span{
+                display: block;
                 position: relative;
-                right: 90px;
-                top: 20px;
-                 
-            }
-            div.sitebox{
-                display: inline-block;
-                text-align: center;
-                background-color: aquamarine;
-                margin: 10px;
-                padding: 20px;
-                cursor: pointer;
-                font-size: 20px;
-                width: 90px;
-                margin-bottom: 20px;
+                top: 30%;
+                text-shadow: 1px 2px 2px#222;
 
             }
+            article#slides section.txsl span.title{
+                position: relative;
+                top: 25%;
+                right: 10%;
+                font-size: 35pt;
+
+            }
+            article#slides section.txsl span.describ{
+
+                font-size: 15pt;
+
+            }
+
         div#showPort{
             
           
@@ -292,7 +344,7 @@ body{
                 }
 
 
-  /*********** HEADER ***********/
+  /*********** FOOTER ***********/
 
             footer{
 

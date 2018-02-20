@@ -4,72 +4,26 @@
         <title>Test Page</title>
         <meta charset="UTF-8">
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Changa');
-            * {
-        font-family: 'Changa';
-
-         }
-            body{
-                background-image: url(View/img/wallpaper/nature.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
+            div{
+                text-align: center;
+                padding: 15px;
                 direction: rtl;
-            }
-            section#signPeople{
-            background-color: rgba(0, 0, 0, 0.603);
-            width: 85%;
-            height: 450px;
-            margin: 90px;
-
-            }
-            section#signPeople div.sign{
-                display: inline-grid;
-                width: 45%;
-                padding: 20px;
-                border-left: 2px none black;
-
-            }
-            section#signPeople div div.title{
-                color: azure;
-                background-color: maroon;
-                width: 30%;
+                cursor: pointer;
+                transition:all 0.3s;
+            }div:hover{
+                border-bottom-width: 2px;
+                border-bottom-color: brown; 
+                border-bottom-style:solid;
                 padding: 10px;
+                font-size: 15pt;
+
             }
-            div.sign form label {
-                text-align: start;
-                padding: 5px;
-                padding-right: 10px;
-            }
-            
         </style>
     </head>
     <body>
-            <section id="signPeople">
-                    <div id="login" class="sign">
-                        <div class="title">دخول الاعضاء</div>
-                        <form method="get" action="" name="login">
-                            <label>اسم المستخدم</label>
-                            <input type="username">
-                            <br>
-                            <label>كلمة المرور </label>
-                            <input type="password">
-                            <br>
-                            <input type="checkbox">
-                            <label>تذكرني</label>
-                            <br>
-                            <input type="submit" value="دخول">
-        
-        
-                        </form>
-                    </div>
-                    <div id="joinUs" class="sign">
-                        <div class="title">انظم إلينا</div>
-                        <form method="get" action="" name="joinUs">
-        
-        
-        
-                        </form>
-                    </div>
-                </section>
+    
+        <div>رابط</div>
+        <div>رابط</div>
+    
     </body>
 </html>

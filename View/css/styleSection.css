@@ -1,0 +1,182 @@
+/*  -=-=-=-=-=-=---> Additions <---=-=-=-=-=-=-  */
+    /* Cairo */
+    @import url('https://fonts.googleapis.com/css?family=Cairo');
+    /* El Messiri */
+    @import url('https://fonts.googleapis.com/css?family=El+Messiri');
+    /* Changa */
+    @import url('https://fonts.googleapis.com/css?family=Changa');
+    /* Amiri */
+    @import url('https://fonts.googleapis.com/css?family=Amiri');
+
+/*-=-=-=-=-=- Add -=-=-=-=-=-*/
+    *{
+        font-family: 'Changa';
+        margin: 0px;
+        padding: 0px;
+        direction: rtl;
+
+    }
+    a.rem{text-decoration: none;}
+
+/*-=-=-=-=-=- HEADER -=-=-=-=-=-*/
+    header{
+        width: 100%;
+        background-color: rgba(7, 7, 7, 0.959);
+        color: azure;
+    }
+        header div#logoTitle, header nav#branchSite, header div#ourTch{
+            display: inline-block;
+            padding: 10px;
+
+            }
+            header div#logoTitle span.title{
+                position: relative;
+                top: -20px;
+                right: 20px;
+                font-size: 25pt;
+            }
+            header div#logoTitle img{
+                height: 70px;
+                width: 70px;
+                position: relative;
+                top: 10px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 6px 6px #232323 inset;
+            }
+        header nav#branchSite{
+            position: relative;
+            top: -20px;
+            right: 30px
+        }
+        header div#ourTch{
+            float: left;
+            position: relative;
+            top: 15px;
+        }
+            div.logoLink{
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                margin: 10px;
+                filter:drop-shadow(50%);
+                transition-duration: 0.15s;
+                z-index: 2;
+            }
+            div.logoLink:hover{
+                height: 50px;
+                width: 50px;
+                box-sizing: border-box;
+                margin: 5px;
+                box-shadow: 0 0 4px 5px #222 outset;
+                transition-duration: 0.15s;
+
+            }
+            div#facebook{
+                background-image: url(../img/logo/black/Facebook.svg);
+            }
+            div#facebook:hover{
+                background-image: url(../img/logo/color/Facebook.svg);
+            }
+            div#twitter{
+                background-image: url(../img/logo/black/Twitter.svg);
+            }
+            div#twitter:hover{
+                background-image: url(../img/logo/color/Twitter.svg);
+            }
+            div#github{
+                background-image: url(../img/logo/black/Github.svg);
+            }
+            div#github:hover{
+                background-image: url(../img/logo/color/Github.svg);
+            }
+            div#googleplus{
+                background-image: url(../img/logo/black/Google+.svg);
+            }
+            div#googleplus:hover{
+                background-image: url(../img/logo/color/Google+.svg);
+            }
+            div#youtube{
+                background-image: url(../img/logo/black/YouTube.svg);
+            }
+            div#youtube:hover{
+                background-image: url(../img/logo/color/YouTube.svg);
+            }
+            div#pinterest{
+                background-image: url(../img/logo/black/Pinterest.svg);
+            }
+            div#pinterest:hover{
+                background-image: url(../img/logo/color/Pinterest.svg);
+            }
+            div#linkedin{
+                background-image: url(../img/logo/black/Linkedin.svg);
+            }
+            div#linkedin:hover{
+                background-image: url(../img/logo/color/Linkedin.svg);
+            }
+
+        span.LSiteButton{
+            height: 110%;
+            font-family:'Changa';
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            text-shadow: -1px 1px 3px black; 
+            transition: all 0.3s;
+            cursor: pointer;
+            padding: 5px;
+            
+        }
+        span.LSiteButton:hover{
+            color: rgba(243, 211, 70, 0.945);
+            border-bottom: 2px solid rgb(243, 209, 60, 0.945);
+            font-size: 20px;
+            padding: 0px;
+
+        }
+        span.LSiteButton:active{
+            color: rgb(223, 86, 86);
+        }
+        span.LSiteButton:visited{
+            color: rgb(80, 80, 80);
+        }
+/*-=-=-=-=-=- SECTION -=-=-=-=-=-*/
+    section{
+        min-height: 700px;
+        max-height: 1000px;
+        background-color: #e4e4e4
+
+    }
+
+
+/*-=-=-=-=-=- FOOTER -=-=-=-=-=-*/
+    footer{
+
+        min-height: 300px;
+        max-height: 400px;
+        background-color: rgba(15, 15, 15, 0.856);
+
+    }
+        div.listItem{
+            display: inline-block;
+            padding: 5px;
+            margin:12px;
+            color: azure;
+            width: 17%;
+            align-items: center center;
+        }
+        span.itemTitle{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        span.item{
+            display: block;
+            padding: 5px;
+            color: azure;
+            font-size: 15px;
+        }
+        span.item:hover{
+            border-bottom: rgb(150, 150, 150);
+            color: rgb(150, 150, 150);
+            font-size: 20px;
+            padding: 0px;
+        }
