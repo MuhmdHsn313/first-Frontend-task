@@ -53,94 +53,25 @@
                     </a>
                 </div>
         </header>
-        <section>
-            <form method="get" name="joinus">
-                <input type="text" placeholder="إسمك">
-                <input type="text" placeholder="اللقب">
-                <input type="username" placeholder="أسم المستخدم">
-                <input type="email" placeholder="البريد الالكتروني">
-                <input type="password" placeholder="كلمة المرور">
-                <input type="phonenumber" placeholder="رقم هاتفك">
-                <label>تأريخ ميلادك</label>
-                <select name="Year">
-                    <option selected>Year</option>
-                    <script>
-                        var year = 1950;
-                        for(var i = 0; i <= 60; i++){
-                            document.write("<option value=\"" + year + "\">" + year + "</option>")
-                            year++;
-                        }
-                    </script>
-                </select>
-                <select name="month">
-                    <option selected>Month</option>
-                    <script>
-                        var month = 1;
-                        for(var i = 1; i <= 12; i++){
-                            document.write("<option value=\"" + month + "\">" + month + "</option>")
-                            month++;
-                        }
-
-                    </script>
-                </select>
-                <select name="day">
-                    <option selected>Day</option>
-                    <script>
-                        /* ***For Change Day with a month...
-                        function changeDay(){
-                            var MYmonth = document.getElementById("month").getElementsByTagName("option").value,
-                                monthDay;
-                            switch(MYmonth){
-                                case 1:
-                                    monthDay = 31;
-                                break;
-                                case 2:
-                                    monthDay = 28;
-                                break;
-                                case 3:
-                                    monthDay = 31;
-                                break;
-                                case 4:
-                                    monthDay = 30;
-                                break;
-                                case 5:
-                                    monthDay = 31;
-                                break;
-                                case 6:
-                                    monthDay = 30;
-                                break;
-                                case 7:
-                                case 8:
-                                    monthDay = 31;
-                                break;
-                                case 9:
-                                    monthDay = 30;
-                                break;
-                                case 10:
-                                    monthDay = 31;
-                                break;
-                                case 11:
-                                    monthDay = 30;
-                                break;
-                                case 12:
-                                    monthDay = 31;
-                                break;
-                                default:
-                                    monthDay = 30;
-                                break;
-                            }
-                            for(var i = 1; i <= monthDay; i++){
-                                document.write("<option value=\"" + i + "\">" + i + "</option>");
-                            }
-                        }*/
-                        for(var i = 1; i <= 31; i++){
-                                document.write("<option value=\"" + i + "\">" + i + "</option>");
-                            }
-                    </script>
-                    
-                </select>
-
-            </form>
+        <section id="shareidea">
+            <div id="share">
+                <center>
+                <form method="get" name="ideaform">
+                    <img src="../View/img/logo/webDecrib/suggestion.svg" height="100px" width="100px">
+                    <span class="titleSign">اقتراح</span>
+                    <br>
+                    <input type="text" placeholder="إسمك" class="put" class="ar">
+                    <input type="username" placeholder="أسم المستخدم" class="put" class="en">
+                    <input type="email" placeholder="البريد الالكتروني" class="put" class="en">    
+                    <textarea placeholder="الشرح..."></textarea>
+                    <label style="display:block;padding-top:15px">
+                    <span >ملف عن المشروع</span>
+                    <input type="file" style="display:inline">
+                    </label>
+                    <input type="submit" value="إرسال" style="display:block;margin-top:15px">
+                </form>
+                </center>
+            </div>
         </section>
         <footer> 
             <div class="listItem">
@@ -195,8 +126,7 @@
             </div>    
             <center style="color:azure">All &copy;CopyRight Save For MUHAMMAD HASAN ALASADY </center>
         </footer>
-        <script>
-            
+        <script src="../View/js/main.js">
         </script>
     </body>
 </html>

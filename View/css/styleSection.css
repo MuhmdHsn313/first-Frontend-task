@@ -41,10 +41,49 @@
     }
     span.titleSign{
         position: relative;
-        top: -25px;
-        right: 10px;
+        top: -35px;
+        right: 15px;
         color: azure;
-        font-size: 25pt
+        font-size: 30pt
+    }
+    input.put[type="text"], 
+    input.put[type="email"],
+    input.put[type="password"],
+    input.put[type="username"]{
+        align-items: center;
+        margin: 15px;
+        border: 2px paleturquoise dotted;
+        text-align: center;
+        width: 250px;
+        height: 40px;
+        background-color: rgb(63, 63, 63);
+        color: rgb(255, 255, 255);
+    }
+    input.ar[type="text"]{
+        direction: rtl;
+
+    }
+    input.en[type="password"],input.en[type="email"]input.en[type="username"]{
+        direction: ltr;
+
+    }
+    textarea{
+        border: none;
+        background-color: rgb(63, 63, 63);
+        color: rgb(255, 255, 255);
+        text-align: right;
+
+    }
+    .rtl {
+        direction: rtl; 
+        text-align: right;
+        unicode-bidi: bidi-override;
+    }
+    
+    .ltr {
+        direction: ltr; 
+        text-align: left;
+        unicode-bidi: bidi-override;
     }
 /*-=-=-=-=-=- HEADER -=-=-=-=-=-*/
     header{
@@ -150,7 +189,7 @@
             text-shadow: -1px 1px 3px black; 
             transition: all 0.3s;
             cursor: pointer;
-            padding: 5px;
+            padding: 7px;
             
         }
         span.LSiteButton:hover{
@@ -182,7 +221,6 @@
             width: 45%;
             float: right;
             clear: left;
-            border-radius: 10px;
             display: inline-table;
 
         }
@@ -252,6 +290,26 @@
             section.project span.projectDescrib{
                 font-size: 12pt;
             }
+  /* Share Idea */
+    section#shareidea{
+        height: 800px;
+        background-color: #e4e4e4;
+         
+    }
+        div#share{
+            padding: 10px;
+            padding-top: 20px;
+            margin: 25px;
+            margin-right: 25%;
+            background-color: #222;
+            height: 600px;
+            width: 50%;
+            display: inline-table;
+        }
+            div#share form input{
+                display: block;
+            }
+
 /*-=-=-=-=-=- FOOTER -=-=-=-=-=-*/
     footer{
 
