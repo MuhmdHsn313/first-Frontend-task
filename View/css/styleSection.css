@@ -265,16 +265,27 @@
                 height: 200px;
                 width: 30%;
                 display: inline-block;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) ,url(../img/wallpaper/waters.jpg);
                 background-position: center center;
                 background-repeat: no-repeat;
-                background-size: 100%;
+                background-size: 125%;
                 box-shadow: 0px 0px 5px 1px rgba(34, 34, 34, 0.596);
                 padding: 8px;
                 margin: 10px;
                 transition: linear all 0.2s ;
                 cursor: pointer;
                 
+            }
+            section.project[img="1"], section.project[img="4"], section.project[img="7"]{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(../img/doing/coding1.png);
+
+            }
+            section.project[img="2"], section.project[img="5"], section.project[img="8"]{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(../img/doing/coding2.png);
+
+            }
+            section.project[img="3"], section.project[img="6"], section.project[img="9"]{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(../img/doing/coding3.png);
+
             }
             section#ourprojects article.projectimg section.project:hover{
                 box-shadow: 0px 0px 2px 5px rgba(34, 34, 34, 0.596);
@@ -285,10 +296,15 @@
                 font-size: 20pt;
                 position: relative;
                 top: 5px;
+                color: #d6b627;
                 display: block
+            } section.project span.projectText:hover{
+                color: azure;
+                
             } 
             section.project span.projectDescrib{
                 font-size: 12pt;
+
             }
   /* Share Idea */
     section#shareidea{
