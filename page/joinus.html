@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <title>Join Us</title>
+      
+        <link rel="icon" href="../View/img/icon/c4n.ico">
+        <!-- [Style Section] -->
+        <link rel="stylesheet" type="text/css" href="../View/css/styleSection.css">
+        <meta name="viewport" content="width=device-width, initial-scala=1.0">
+             
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" title="الرئيسة" class="rem">
+            <div id="logoTitle">                
+                <img src="../View/img/logo/c4n.svg">
+                <span class="title">اسم الموقع</span>
+            </div>
+            </a>
+            <nav id="branchSite">
+                <a href="../index.html" class="rem"><span class="LSiteButton">الرئيسية</span></a>
+                <span class="|">|</span>
+                <a href="joinus.html" class="rem"><span class="LSiteButton">ادخل مجتمعنا</span></a>
+                <span class="|">|</span>
+                <a href="shareidea.html" class="rem"><span class="LSiteButton">اقترح مشروعاً</span></a>
+                <span class="|">|</span>
+                <a href="ourprojects.html" class="rem"><span class="LSiteButton">مشاريعنا</span></a>
+                <span class="|">|</span>
+                <a href="aboutus.html" class="rem"><span class="LSiteButton">عنّا</span></a>
+            </nav>
+                <div id="ourTch">
+                    <a href="#GitHub" class="rem" target="_blank">
+                        <div id="github"   class="logoLink"></div>
+                    </a>
+                    <a href="#Youtube" class="rem" target="_blank">
+                        <div id="youtube"   class="logoLink"></div>
+                    </a>
+                    <a href="#Pinterest" class="rem" target="_blank">
+                        <div id="pinterest"   class="logoLink"></div>
+                    </a>
+                    <a href="#Linkedin" class="rem" target="_blank">
+                        <div id="linkedin"   class="logoLink"></div>
+                    </a>
+                    <a href="#GooglePlus" class="rem" target="_blank">
+                        <div id="googleplus"   class="logoLink"></div>
+                    </a>
+                    <a href="#Twitter" class="rem" target="_blank">
+                        <div id="twitter"  class="logoLink"></div>
+                    </a>
+                    <a href="#FaceBook" class="rem" target="_blank">
+                        <div id="facebook" class="logoLink"></div>
+                    </a>
+                </div>
+        </header>
+        <section id="joinus">
+            <div id="signup">
+                <form method="get" name="joinus">
+                    <center>
+                    <img src="../View/img/logo/webDecrib/newuser.svg" height="100px" width="100px">
+                    <span class="titleSign">اﻹنظمام</span>
+                    <br>
+                    <input type="text" placeholder="إسمك" class="input" class="ar">
+                    <input type="text" placeholder="اللقب" class="input">
+                    <input type="username" placeholder="أسم المستخدم" class="input" class="en">
+                    <input type="email" placeholder="البريد الالكتروني" class="input" class="en">
+                    <input type="password" placeholder="كلمة المرور" class="input" class="en">
+                    <label>تأريخ ميلادك</label>
+                    <select name="Year">
+                        <option selected>Year</option>
+                        <script>
+                            var year = 1950;
+                            for(var i = 0; i <= 60; i++){
+                                document.write("<option value=\"" + year + "\">" + year + "</option>")
+                                year++;
+                            }
+                        </script>
+                    </select>
+                    <select name="month">
+                        <option selected>Month</option>
+                        <script>
+                            var month = 1;
+                            for(var i = 1; i <= 12; i++){
+                                document.write("<option value=\"" + month + "\">" + month + "</option>")
+                                month++;
+                            }
+
+                        </script>
+                    </select>
+                    <select name="day">
+                        <option selected>Day</option>
+                        <script>
+                            /* ***For Change Day with a month...
+                            function changeDay(){
+                                var MYmonth = document.getElementById("month").getElementsByTagName("option").value,
+                                    monthDay;
+                                switch(MYmonth){
+                                    case 1:
+                                        monthDay = 31;
+                                    break;
+                                    case 2:
+                                        monthDay = 28;
+                                    break;
+                                    case 3:
+                                        monthDay = 31;
+                                    break;
+                                    case 4:
+                                        monthDay = 30;
+                                    break;
+                                    case 5:
+                                        monthDay = 31;
+                                    break;
+                                    case 6:
+                                        monthDay = 30;
+                                    break;
+                                    case 7:
+                                    case 8:
+                                        monthDay = 31;
+                                    break;
+                                    case 9:
+                                        monthDay = 30;
+                                    break;
+                                    case 10:
+                                        monthDay = 31;
+                                    break;
+                                    case 11:
+                                        monthDay = 30;
+                                    break;
+                                    case 12:
+                                        monthDay = 31;
+                                    break;
+                                    default:
+                                        monthDay = 30;
+                                    break;
+                                }
+                                for(var i = 1; i <= monthDay; i++){
+                                    document.write("<option value=\"" + i + "\">" + i + "</option>");
+                                }
+                            }*/
+                            for(var i = 1; i <= 31; i++){
+                                    document.write("<option value=\"" + i + "\">" + i + "</option>");
+                                }
+                        </script>
+                        
+                    </select>
+                    <label style="display:block;padding-top:15px">
+                    <span >سيرتك الذاتية</span>
+                    <input type="file">
+                    </label>
+                    <input type="submit" value="إرسال" style="display:block;margin-top:15px">
+                    </center>
+                </form>
+            </div>
+            <div id="signin">
+                <form method="get" name="login">
+                    <center>
+                    <img src="../View/img/logo/webDecrib/users.svg" height="100px" width="100px"> 
+                    <span class="titleSign">دخول الاعضاء</span>
+                    <br>
+                    <input type="username" placeholder="أسم المستخدم" class="input" class="en">
+                    <input type="password" placeholder="كلمة المرور" class="input" class="en">
+                    <input type="checkbox" style="display:inline"><label>تذكرني</label>
+                    <input type="submit" value="دخول">
+                    </center>
+                </form>
+                <br>
+                <center style="color:azure">---------------------------------------------------------------------------</center>
+                <div id="forgetPass" style="height:0px;position:relative;top:5px;">
+                    <center>
+                    <form method="get" name="forgetPass">
+                        <label>هل نسيت كلمة المرور</label>
+                        <input type="username" placeholder="اسم المستخدم او البريد الالكتروني" class="input" class="en">
+                        <input type="submit" value="إستعادة">
+                    </form>
+                    </center>
+                </div>
+            </div>
+            
+        </section>
+        <footer> 
+            <div class="listItem">
+                <span class="itemTitle">الاولى</span>
+                <div class="itemBar">
+                    <a href="#1" class="rem"><span class="item">واحد</span></a>
+                    <a href="#1" class="rem"><span class="item">اثنان</span></a>
+                    <a href="#1" class="rem"><span class="item">ثلاث</span></a>
+                    <a href="#4" class="rem"><span class="item">اربع</span></a>
+                    <a href="#5" class="rem"><span class="item">خمس</span></a>
+                </div>
+            </div>
+            <div class="listItem">
+                <span class="itemTitle">عنوان</span>
+                <div class="itemBar">
+                    <a href="#1" class="rem"><span class="item">رابط</span></a>
+                    <a href="#2" class="rem"><span class="item">رابط</span></a>
+                    <a href="#3" class="rem"><span class="item">رابط</span></a>
+                    <a href="#4" class="rem"><span class="item">رابط</span></a>
+                    <a href="#5" class="rem"><span class="item">رابط</span></a>
+                </div>
+            </div>
+            <div class="listItem">
+                <span class="itemTitle">عنوان</span>
+                <div class="itemBar">
+                    <a href="#1" class="rem"><span class="item">رابط</span></a>
+                    <a href="#2" class="rem"><span class="item">رابط</span></a>
+                    <a href="#3" class="rem"><span class="item">رابط</span></a>
+                    <a href="#4" class="rem"><span class="item">رابط</span></a>
+                    <a href="#5" class="rem"><span class="item">رابط</span></a>
+                </div>
+            </div>
+            <div class="listItem">
+                <span class="itemTitle">عنوان</span>
+                <div class="itemBar">
+                    <a href="#1" class="rem"><span class="item">رابط</span></a>
+                    <a href="#2" class="rem"><span class="item">رابط</span></a>
+                    <a href="#3" class="rem"><span class="item">رابط</span></a>
+                    <a href="#4" class="rem"><span class="item">رابط</span></a>
+                    <a href="#5" class="rem"><span class="item">رابط</span></a>    
+                </div>
+            </div>
+            <div class="listItem">
+                <span class="itemTitle">عنوان</span>
+                <div class="itemBar">
+                    <a href="#1" class="rem"><span class="item">رابط</span></a>
+                    <a href="#2" class="rem"><span class="item">رابط</span></a>
+                    <a href="#3" class="rem"><span class="item">رابط</span></a>
+                    <a href="#4" class="rem"><span class="item">رابط</span></a>
+                    <a href="#5" class="rem"><span class="item">رابط</span></a>    
+                </div>
+            </div>    
+            <center style="color:azure">All &copy;CopyRight Save For MUHAMMAD HASAN ALASADY </center>
+        </footer>
+        <script>
+            
+        </script>
+    </body>
+</html>

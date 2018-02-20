@@ -14,10 +14,34 @@
         margin: 0px;
         padding: 0px;
         direction: rtl;
-
+        
     }
-    a.rem{text-decoration: none;}
-
+    label{color: azure}
+    a.rem{text-decoration: none; color: azure}
+    input[type="submit"], input[type="file"]{
+        height: 30px;
+        width: 100px;
+        border: none;
+        transition: all 0.3s;
+    }
+    input[type="submit"]:hover{
+        background-color: aquamarine
+    }
+    select{
+        height: 30px;
+        width: 100px;
+        border-style:none;
+        transition: all 0.3s;
+    } select:hover{
+        background-color: aquamarine;
+    }
+    span.titleSign{
+        position: relative;
+        top: -25px;
+        right: 10px;
+        color: azure;
+        font-size: 25pt
+    }
 /*-=-=-=-=-=- HEADER -=-=-=-=-=-*/
     header{
         width: 100%;
@@ -139,14 +163,49 @@
             color: rgb(80, 80, 80);
         }
 /*-=-=-=-=-=- SECTION -=-=-=-=-=-*/
-    section{
+    /* Join Us */
+    section#joinus{
         min-height: 700px;
         max-height: 1000px;
-        background-color: #e4e4e4
-
+        margin: 0px;
+        background-color: #e4e4e4;
     }
+        section#joinus div{
+            padding: 5px;
+            margin: 25px;
+            background-color: #222;
+            height: 600px;
+            width: 45%;
+            float: right;
+            clear: left;
+            border-radius: 10px;
+            display: inline-table;
 
+        }
+            section#joinus form input.input{
+                align-items: center;
+                display: block;
+                margin: 15px;
+                border: 2px paleturquoise dotted;
+                text-align: center;
+                width: 250px;
+                height: 40px;
+                background-color: rgb(63, 63, 63);
+                color: rgb(255, 255, 255);
+            }
+            section#joinus form input.ar{
+                direction: rtl;
 
+            }
+            section#joinus form input.en{
+                direction: ltr;
+
+            }
+            div#forgetPass form{
+                position: relative;
+                right: 40%;
+                top: 40px;
+            }
 /*-=-=-=-=-=- FOOTER -=-=-=-=-=-*/
     footer{
 
